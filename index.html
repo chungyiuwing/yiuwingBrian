@@ -6,6 +6,7 @@
     body {
       font-family: Arial, sans-serif;
       margin: 20px;
+      background-color: #f2f2f2;
     }
     
     h1 {
@@ -19,11 +20,36 @@
     p {
       color: #999;
     }
+    
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+    
+    .button:hover {
+      background-color: #666;
+    }
+    
+    .hidden {
+      display: none;
+    }
+    
+    .profile-image {
+      max-width: 200px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Welcome to My Blog</h1>
+    <img src="MyPho.jpg" alt="Profile Image" class="profile-image">
   </header>
   
   <section>
@@ -40,7 +66,8 @@
   
   <section>
     <h2>Education</h2>
-    <ul>
+    <button class="button" onclick="toggleVisibility('education')">Show Education</button>
+    <ul id="education" class="hidden">
       <li>
         <h3>2013-2019</h3>
         <p>Graduate<br>
@@ -59,7 +86,8 @@
   
   <section>
     <h2>Experience</h2>
-    <ul>
+    <button class="button" onclick="toggleVisibility('experience')">Show Experience</button>
+    <ul id="experience" class="hidden">
       <li>
         <h3>JULY 2023-AUGUST 2023</h3>
         <p>Summer Intern<br>
@@ -100,7 +128,14 @@
   </section>
   
   <footer>
-    <p>© 2022 Brian Chung. All rights reserved.</p>
+    <p>&copy; 2022 Brian Chung. All rights reserved.</p>
   </footer>
+  
+  <script>
+    function toggleVisibility(id) {
+      var element = document.getElementById(id);
+      element.classList.toggle("hidden");
+    }
+  </script>
 </body>
 </html>
