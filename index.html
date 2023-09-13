@@ -68,7 +68,7 @@
   
   <section>
     <h2>Education</h2>
-    <button class="button" onclick="toggleVisibility('education')">Show Education</button>
+    <button class="button" onclick="redirectToEducation()">Show Education</button>
     <ul id="education" class="hidden">
       <li>
         <h3>2013-2019</h3>
@@ -92,6 +92,10 @@
    </section>
 
 <script>
+  function redirectToEducation() {
+    window.location.href = "education.html";
+  }
+  
   function redirectToExperience() {
     window.location.href = "experience.html";
   }
@@ -106,7 +110,7 @@
   </section>
   
   <footer>
-    <p>&copy; 2022 Brian Chung. All rights reserved.</p>
+    <p>© 2023 Brian Chung. All rights reserved.</p>
   </footer>
   
   <script>
