@@ -9,6 +9,15 @@
       background-color: #f2f2f2;
     }
     
+    .funny-title {
+      background-color: yellow;
+      color: black;
+      font-family: "Comic Sans MS", cursive;
+      padding: 10px;
+      border-radius: 5px;
+      display: inline-block;
+    }
+    
     h1 {
       color: #333;
     }
@@ -50,74 +59,10 @@
 </head>
 <body>
   <header>
-    <h1>Welcome to My Blog</h1>
+    <h1><span class="funny-title">Welcome to My Funny Blog</span></h1>
     <img src="MyPho.jpg" alt="Profile Image" class="profile-image">
   </header>
   
-  <section>
-    <h2>About Me</h2>
-    <p>
-      Name: Chung Yiu Wing Brian<br>
-      Age: 22<br>
-      Gender: Male<br>
-      Nationality: HK<br>
-      Tel No.: 97699995<br>
-      E-mail: yiuwing16781678@gmail.com
-    </p>
-  </section>
-  
-  <section>
-    <h2>Education</h2>
-    <button class="button" onclick="redirectToEducation()">Show Education</button>
-    <ul id="education" class="hidden">
-      <li>
-        <h3>2013-2019</h3>
-        <p>Graduate<br>
-        STFA Seaward Woo College (Form 1 to Form 6)</p>
-      </li>
-      <li>
-        <h3>2020-Present</h3>
-        <p>Bachelor of Commerce (Honors) in Financial Technology<br>
-        Hong Kong Shue Yan University<br>
-        Managed different student projects to analyze different business data<br>
-        GPA: 3.29<br>
-        Data analytics, Wealth management, Econometric</p>
-      </li>
-    </ul>
-  </section>
-
-   <section>
-     <h2>Experience</h2>
-     <button class="button" onclick="redirectToExperience()">Show Experience</button>
-   </section>
-
-<script>
-  function redirectToEducation() {
-    window.location.href = "education.html";
-  }
-  
-  function redirectToExperience() {
-    window.location.href = "experience.html";
-  }
-</script>
- 
-  <section>
-    <h2>Special Skills</h2>
-    <ul>
-      <li>Python</li>
-      <li>Financial analysis</li>
-    </ul>
-  </section>
-  
-  <footer>
-    <p>© 2023 Brian Chung. All rights reserved.</p>
-  </footer>
-  
-  <script>
-    function toggleVisibility(id) {
-      var element = document.getElementById(id);
-      element.classList.toggle("hidden");
-    }
-  </script>
+  <!-- Rest of your code... -->
 </body>
 </html>
