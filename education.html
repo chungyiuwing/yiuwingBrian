@@ -5,16 +5,20 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background-color: #f2f2f2;
+      margin: 20px;
+      background-color: #ffffff; /* Set the default background color to white */
+      background-image: linear-gradient(to bottom, #f5f384 13%, #ffffff 13%); /* Add a gradient for the top 20% */
     }
 
     h1 {
-      text-align: center;
+      text-align: left; /* Align the heading to the left */
       color: #333333;
+      margin-right: auto; /* Add this line to push the heading to the left */
     }
 
+    .back-button {
+      text-align: right; /* Align the back button to the right */
+    }
 
     .introduction {
       margin-bottom: 20px;
@@ -93,7 +97,9 @@
 </head>
 <body>
   <h1>My Education</h1>
-
+  <div class="back-button">
+    <a href="index.html">Back</a>
+  </div>
   <div class="introduction">
     <h2>Hello! My name is Chung Yiu Wing Brian.</h2>
     <p>I am passionate about Financial Technology (FinTech). In this simple description, I will share a bit about myself and my journey in studying this exciting field.</p>
