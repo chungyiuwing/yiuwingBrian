@@ -41,9 +41,10 @@
     
     .button {
       display: inline-block;
-      padding: 10px 20px;
+      padding: 15px 30px;
       background-color: #333;
-      color: #fff;
+      color: black; /*change the text colour of the button */
+      font-size: 18px;
       text-decoration: none;
       border-radius: 5px;
       margin-right: 10px;
@@ -61,8 +62,18 @@
 
     .header-buttons {
       display: flex;
-      gap: 10px;
     }
+
+    .button {
+      margin-right: 5px; /* Set the desired gap between buttons */
+    }
+
+    /* Reduce the gap for the second button */
+    .header-buttons .button:nth-child(2) {
+      margin-left: -5px; /* Adjust the value as needed */
+      background-color: transparent;
+    }
+    
     
     .hidden {
       display: none;
