@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Projects</title>
+<style>
+  body {
+     font-family: Arial, sans-serif;
+     margin: 30px;
+     background-color: #ffffff; /* Set the default background color to white */
+      background-image: linear-gradient(to bottom, #f5f384 90px, #ffffff 90px); /* Add a gradient for the top 20% */
+  }
+  
+  .project {
+    display: flex;
+    margin-bottom: 100px;
+    margin-top:50px;
+  }
+
+  .project img {
+    width: 200px;
+    height: auto;
+    margin-left: 150px; /* Change margin-right to margin-left */
+    order: 2; /* Add this property to move the image to the right */
+  }
+
+  .project-content {
+    flex-grow: 1;
+    margin-right: 20px; /* Add margin-right to create space between text and image */
+  }
+
+  .back-button-container {
+    display: flex; /* Add this property to enable flexbox layout */
+    justify-content: space-between; /* Add this property to distribute items evenly */
+    align-items: center; /* Add this property to vertically align items */
+    margin-bottom: 20px; /* Adjust margin as needed */
+  }
+
+  .back-button {
+    display: inline-block;
+    border: 1px solid gray;
+    padding: 5px;
+    background-color: transparent;
+    font-size: smaller;
+  }
+</style>
+</head>
+<body>
+  <div class="back-button-container">
+    <h1>Projects I've Worked On</h1>
+    <div class="back-button">
+      <a href="#" onclick="history.back();">&lt; Back</a>
+    </div>
+  </div>
+  
+
+  <div class="project">
+    <img src="path_to_image_1.jpg" alt="ASR Accuracy Checker">
+    <div class="project-content">
+      <h2>ASR Accuracy Checker</h2>
+      <p>This program is designed to check the accuracy of an Automatic Speech Recognition (ASR) system. It compares the output of the ASR system with the expected or reference transcription to identify errors and calculate the accuracy of the system.</p>
+      <p>The program reads the transcriptions from Word documents and uses difflib to compare the ASR output with the reference transcription. It calculates the similarity by removing non-alphabetic characters and identifying error words, added words, and missing words. The similarity is calculated as a percentage based on the total number of words.</p>
+      <p>The program also marks the errors, added words, and missing words in the ASR output by highlighting them in different colors in a new Word document.</p>
+      <p>The results of the comparison, including the similarity percentage, total number of error words, added words, missing words, and total number of words, are displayed.</p>
+      <p>Additionally, a pie chart is generated to visualize the proportions of error words, added words, and missing words in the ASR output.</p>
+      <p>Overall, this program provides a comprehensive analysis of the accuracy of an ASR system by comparing its output with the reference transcription and highlighting the differences. It can be a valuable tool for evaluating and improving the performance of ASR systems.</p>
+    <img src="path_to_image_3.jpg" alt="Image 3">
+    <img src="path_to_image_4.jpg" alt="Image 4">
+  </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <img src="path_to_image_2.jpg" alt="BLEU Model">
+    <div class="project-content">
+      <h2>BLEU Model</h2>
+      <p>The BLEU (Bilingual Evaluation Understudy) score is a widely used metric for evaluating the quality of machine translation output. It measures the similarity between a candidate translation and one or more reference translations by comparing their n-gram overlap.</p>
+      <p>The provided BLEU score model is implemented using the nltk library in Python. It takes as input the number of reference translations, the reference translations themselves, and the candidate translation. The model then calculates the BLEU score and individual n-gram scores.</p>
+      <p>To calculate the BLEU score, the model first computes the precision of each n-gram (unigram, bigram, trigram, etc.) in the candidate translation by comparing it with the reference translations. The precision is the ratio of the number of n-grams in the candidate translation that appear in the reference translations to the total number of n-grams in the candidate translation. The model then computes the geometric mean of the n-gram precisions, weighted by the number of reference translations.</p>
+      <p>The BLEU score ranges from 0 to 1, with 1 indicating a perfect match between the candidate and reference translations. The individual n-gram scores provide insights into the quality of the translation at different levels of n-gram overlap.</p>
+      <p>The BLEU score model can be used to evaluate the performance of machine translation systems, compare different translation models, or track the progress of translation algorithms over time. It is a valuable tool for researchers and practitioners in the field of natural language processing and machine translation.</p>
+      <p>Overall, the provided BLEU score model offers a convenient and efficient way to assess the quality of machine translation output. Its implementation in Python using the nltk library allows for easy integration into existing translation pipelines and research projects.</p>
+    <img src="path_to_image_3.jpg" alt="Image 5">
+    <img src="path_to_image_4.jpg" alt="Image 6">
+    </div>
+  </div>
+
+</body>
+</html>
