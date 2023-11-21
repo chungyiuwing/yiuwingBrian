@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HKTV VIDEO</title>
+  <style>
+    /* Your existing styles here */
+
+    /* Added styling for the video container */
+    .video-container {
+      margin-top: 20px;
+      width: 100%;
+      max-width: 800px; /* Adjust the maximum width as needed */
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Added styling for the video */
+    video {
+      width: 100%;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="video-container">
+    <h2>Management Trainee</h2>
+    <video controls>
+      <source src="HKTV_Brian.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+
+  <a href="index.html">Back</a>
+</body>
+</html>
