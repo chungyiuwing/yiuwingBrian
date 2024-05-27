@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>信件背景頁面</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('letter-background.jpg'); /* 替換為你的信件背景圖片 */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+        .content {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h2>歡迎來到我們的網站</h2>
+        <p>請輸入密碼來訪問下一頁面。</p>
+        <form onsubmit="event.preventDefault(); checkPassword();">
+            <label for="password">密碼:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">提交</button>
+        </form>
+    </div>
+    <script>
+        function checkPassword() {
+            var inputPassword = document.getElementById("password").value;
+            var correctPassword = "yourPassword"; // 指定的密碼
+
+            if (inputPassword === correctPassword) {
+                window.location.href = "nextpage.html"; // 跳轉到的下一個網頁
+            } else {
+                alert("密碼錯誤，請重新輸入。");
+            }
+        }
+
+        // 紀錄訪問者IP
+        fetch('track_ip.php');
+    </script>
+</body>
+</html>
